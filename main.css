@@ -25,11 +25,38 @@ a:visited {
   color: #74638f;
 }
 
+a.return {
+  position: fixed;
+  left: 2%;
+  top: 0%;
+  padding: 20px;
+  text-decoration: none;
+}
+
+i {
+  margin-right: 10px;
+}
+
+#icon {
+  border-radius: 18px;
+  height: 90px;
+}
+
+.header {
+  padding-top: 8%;
+}
 #main {
-  margin: 30px 8px;
-  padding: 15px;
   border-radius: 5px;
   background: #eee;
+}
+
+article {
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
+.summary{
+  padding: 40px;
 }
 
 @media (max-width: 460px) {

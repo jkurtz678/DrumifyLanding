@@ -10,11 +10,12 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   margin-top: 15px;
   margin-bottom: 0px;
   font-weight: 700;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -27,11 +28,7 @@ p {
 }
 
 a {
-  color: #477ca7;
-}
-
-a:visited {
-  color: #74638f;
+  color: #5378e8;
 }
 
 a.return {
@@ -40,10 +37,7 @@ a.return {
   top: 0%;
   padding: 20px;
   text-decoration: none;
-}
-
-#video {
-  text-align: center;
+  font-size: 1.4em;
 }
 
 i {
@@ -56,7 +50,7 @@ i {
 }
 
 .header {
-  padding-top: 7%;
+  padding-top: 5%;
   text-align: center;
 
 }
@@ -104,11 +98,12 @@ img {
 
 .horizontal-phone {
   height: 100%;
-  max-height: 400px;
+  max-height: 380px;
+  padding-bottom: 50px;
 }
 
 .blocktext {
-  font-size: 1.7em;
+  font-size: 1.8em;
   font-style: italic;
   color: #E16262;
   margin-top: 20px;
@@ -130,4 +125,23 @@ img {
   #img-caption {
     font-size: 1.4rem;
   }
+}
+
+#developer {
+  background-color: #E16262;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+#video {
+  text-align: center;
+  width: 75%;
+  background-color: #5378e8;
+  border-radius: 50px;
+  padding: 35px; 
+  margin: auto;
+}
+
+.developer {
+  color: white;
 }

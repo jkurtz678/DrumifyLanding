@@ -3,34 +3,35 @@
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="animate.css">
 </head>
 
 <body id="main"> 
-  <a class="return" href="https://jacksonkurtz.com">
+  <a class="return wow fadeInUp" href="https://jacksonkurtz.com">
     <i class="fa fa-chevron-left"></i>
     Return Home
   </a>
 
   <article class="maincontent">
-    <div class="header">
+    <div class="header wow fadeInUp">
        <img id="icon" src="images/icon.png" alt="app icon">
       <h1 id="title">Drumify</h1>
     </div>
-    <div id="video">
-      <iframe title="propulsionvideo" class="video" src="https://www.youtube.com/embed/pXazWByis4A" width="700" height="400" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <div id="videoContainer" class="wow fadeInUp">
+      <iframe id="video" title="propulsionvideo" class="video" src="https://www.youtube.com/embed/pXazWByis4A" width="700" height="400" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </div>
     <div class="summary">
-      <p class="blocktext">Drumify helps you create beats from sounds in your environment</p>
+      <p class="blocktext wow fadeInUp">Drumify helps you create beats from sounds in your environment</p>
       
 
     <div class="inlineimage">
-        <div class="flex-item" >
+        <div class="flex-item wow fadeInLeft" >
           <h2>Record your own percussion sounds</h2>
           <p>
           A dog bark, the honk of a car horn, the hiss of an opened soda can - Drumify allows you to save any random sound you come across to your phone. After recording the sound, Drumify will analyze the frequency content of the audio, and recommend one of three drum categories to sort the sounds. Drumify will also automatically process the audio and isolate the transient of the recorded sound, so that unwanted noise and silence are not present in your drum beat. The recorded sounds are can be played-back in the Recordings page shown on the right.
         </p>
         </div>
-        <div class="flex-item">
+        <div class="flex-item wow fadeInRight">
           <img
         class="vertical-phone"
         src="images/recordingpage.png"
@@ -38,45 +39,50 @@
         />
         </div>
       </div>
-
+      <div class="wow fadeInUp" >
       <h2>Design your beat</h2>
       <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          Once you have enough recorded sounds, you are ready to design a drum beat. The beat design page is made up of two composite views which can easily be moved between by swiping the lane bar on the edge of the page, as shown in the gif below. The left page is the Sound-Picker View, where the sounds previously recorded can be placed into the colored lane slots on the right side. After the sounds are chosen, you can move to the Sequencer View on the right, where the time pattern in which the sounds are triggered can be programmed. By hitting play at the bottom of the screen, the sounds in the colored lanes will be triggered according to the pattern chosen, and you will have created your drum beat.
         </p>
+      </div>
 
-          <img
-        class="horizontal-phone"
-        src="images/soundpicker.png"
+          <video autoplay loop muted playsinline
+        class="horizontal-phone wow fadeInUp"
+        src="images/sequencer.mov"
         alt="recorder drumify"
-        />
+        />Your broswer does not support the video tag.</video>
   
       
 
       <div class="inlineimage">
-        <div class="flex-item">
+        <div class="flex-item wow fadeInLeft">
           <img
         class="vertical-phone"
         src="images/beatpage.png"
         alt="recorder drumify"
         />
         </div>
-        <div class="flex-item" >
-          <h2>Save your beats</h2>
+        <div class="flex-item wow fadeInRight" >
+          <h2>Save your music</h2>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          When you are done designing your beat, you can name it and save it to your phone. All the beats you have created will be visible in the Beat View Page, and you can click on a beat to listen or edit it further. From this page you can also export the beat to an mp3 or wav file so that it can be loaded into a DAW on your computer.
         </p>
         </div>
         
       </div>
     </div>
-    <div id="developer">
+    <div id="developer" class="wow fadeInUp">
 
     <h2 class="developer">How was it built?</h3>
     <p class="developer">
-    Drumify was developed by Jackson Kurtz and Vernon Chan using the Swift programming language. The majority of the Audio related features in the application were created through a Swift library called AudioKit. Though there are many features we are planning to add to Drumify, the app is nearing a stable release and will soon be ready to publish to the app store.
+    Drumify was developed by Jackson Kurtz and Vernon Chan using the Swift programming language. The majority of the audio related features in the application were created through a Swift library called AudioKit. Though there are many features we are planning to add to Drumify, the app is nearing a stable release and will soon be ready to publish to the app store.
    </p>
 
     </div>
   </article>
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>

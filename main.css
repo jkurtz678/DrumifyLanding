@@ -100,8 +100,6 @@ img {
   text-align: center;
   height: 100%;
   max-height: 380px;
-  margin-top: 40px;
-  margin-bottom: 50px;
 }
 
 .blocktext {
@@ -142,7 +140,7 @@ img {
   background-color: #5378e8;
 }
 
-#videoContainer {
+.videoContainer {
   
   text-align: center;
 }

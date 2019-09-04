@@ -147,3 +147,7 @@ img {
 .developer {
   color: white;
 }
+
+#footer {
+  height: 110px; 
+}
